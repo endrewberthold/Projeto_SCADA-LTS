@@ -1,0 +1,4 @@
+<!-- Ícone SVG de fábrica -->
+<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M2 21V10l6 2V9l6 2V4l8 2v15H2zm2-2h16v-9l-4-1.333V13l-6-2V13l-6-2v8z"/>
+</svg>

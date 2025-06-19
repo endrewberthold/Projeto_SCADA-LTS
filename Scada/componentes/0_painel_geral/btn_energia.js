@@ -1,12 +1,30 @@
 /* @license MIT */
 
-var label = "OK";
-var height = 40;
-var width = 90;
-var value_on_click = false;
+// The button label
+var label = "Energia";
+
+// Appearance settings
+var height = 20;
+var width = 80;
+
+// The pulse value on click (binary)
+var value_on_click = true;
+
+// Display a confirmation prompt before change value
 var enable_confirm_prompt = false;
 var confirm_message = "Change value?";
 
+
+
+
+//
+// DON'T CHANGE THE CODE BELOW
+//
+
+
+
+
+// Check if data point type is compatible
 if (getDataPointType(point.id) != "BINARY")
     return "The selected data point is not binary. Please select a binary data point."
 
@@ -14,7 +32,9 @@ var confirm = "if (window.confirm(&quot;" + confirm_message + "&quot;)) ";
 var pc_id = pointComponent.id;
 var command = "";
 
-command += "var setPoint = ViewDwr.setViewPoint;";
+// This command sets the point to the "value on click" and after re-sets
+// to the "value on click" logically inverted
+command += "var setPoint = ViewDwr.setViewPoint;"
 command += "if (window.location.pathname.includes(&quot;views.shtm&quot;)) {";
 command +=      "show(c" + pc_id + "Changing);";
 command +=      "setPoint(" + pc_id + ", " + value_on_click + ", mango.longPoll.pollRequest.viewId, function() {";
@@ -33,31 +53,27 @@ command +=          "});";
 command +=      "});";
 command += "}";
 
+
 if (enable_confirm_prompt)
     command = confirm + "{" + command + "}";
 
+// Return variable
 var s = "";
 
 s += "<style>";
-s += ".flatBtn {";
-s += "  background-color: rgba(0, 0, 0, 0.4);";
+s += ".flatBtnEnerg {";
+s += "  background-color: #fff;";
 s += "  color: black;";
-s += "  border: none;";
+s += "  border: 1px solid black;";
 s += "  transition: background-color 0.3s ease;";
 s += "  font-weight: bold;";
 s += "  border-radius: 4px;";
 s += "  cursor: pointer;";
-s += "}";
-s += ".flatBtn:hover {";
-s += "  background-color: green;";
-s += "  color: white;";
-s += "}";
 s += "</style>";
-
 s += "<input type='button' ";
 s +=     "onclick='" + command + "' ";
-s +=     "class='flatBtn' ";
-s +=     "style='height:" + height + "px; width:" + width + "px;' ";
+s +=     "class='flatBtnEnerg'";
+s +=     "style='height:" + height + "px; width:"+ width + "px;' ";
 s +=     "value='" + label + "' ";
 s += ">";
 

@@ -4,9 +4,9 @@
 var point_label = "";
 
 // Array de rótulos para os valores do point
-var estados = ["Desligado", "Em produção",
-    "Produzindo em atenção", "Emergência",
-    "Manutenção", "Status: Desconhecido"];
+var estados = ["Máquina desligada", "Máquina ligada",
+    "Em espera", "Produzindo",
+    "Produzindo em Atenção", "Máquina Parada", "Emergência", "Manutenção", "ERRO"];
 
 // Data point text format
 var preffix = "";
@@ -36,15 +36,19 @@ var single_line_mode = false;
 var texto = estados[value] !== undefined ? estados[value] : "Valor inválido";
 var display_value = preffix + texto + suffix;
 var flex_direction = single_line_mode ? "row" : "column";
-var font_weight = "bold"; // sempre em negrito
+var font_weight = "bold";
 var div_id = "data-point" + pointComponent.id;
 
-if(estados[value] == 'Produzindo em atenção') {
-    border_color = "#ffd50000";
+if(estados[value] == 'Produzindo em Atenção') {
+    border_color = "#ffffff00";
     background_color = "#ffd500";
     values_color = "#000000";
-} else if (estados[value] == 'Emergência' || estados[value] == 'Status: Desconhecido') {
-    border_color = "#FF000000";
+} else if(estados[value] == 'Máquina Parada') {
+    border_color = "#ffffff00";
+    background_color = "#ffd500";
+    values_color = "#000000";
+} else if (estados[value] == 'Emergência') {
+    border_color = "#ffffff00";
     background_color = "#FF0000";
     values_color = "#FFFFFF";
 } else {

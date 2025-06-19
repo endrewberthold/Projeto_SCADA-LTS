@@ -5,7 +5,7 @@ var true_format = {
 };
 
 var false_format = {
-    color: "#013D04" // verde escuro não energizado
+    color: "#797979" // verde escuro não energizado
 };
 
 //
@@ -20,18 +20,18 @@ if (getDataPointType(point.id) != "BINARY")
 var color = value ? true_format.color : false_format.color;
 
 // CSS para animação de piscar
-var animationStyle = value ? "animation: blink 1s infinite;" : "";
+// var animationStyle = value ? "animation: blink 1s infinite;" : "";
 
 // Retorno do HTML com CSS inline e animação
 var s = "";
 
-s += "<style>";
-s += "@keyframes blink {";
-s += "  0% {opacity: 1;}";
-s += "  50% {opacity: 0;}";
-s += "  100% {opacity: 1;}";
-s += "}";
-s += "</style>";
+// s += "<style>";
+// s += "@keyframes blink {";
+// s += "  0% {opacity: 1;}";
+// s += "  50% {opacity: 0;}";
+// s += "  100% {opacity: 1;}";
+// s += "}";
+// s += "</style>";
 
 s += "<div style='";
 s += "width: 30px;";
@@ -39,7 +39,7 @@ s += "height: 40px;";
 s += "display: flex;";
 s += "justify-content: center;";
 s += "align-items: center;";
-s += animationStyle;
+// s += animationStyle;
 s += "'>";
 
 s += "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='" + color + "' width='28px' height='28px'>";

@@ -7,7 +7,7 @@
    viewBox="0 0 338.66664 190.49999"
    version="1.1"
    id="svg1"
-   sodipodi:docname="SVG_painel_Operacional.svg"
+   sodipodi:docname="SVG_painel_Manutenção.svg"
    inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -24,17 +24,17 @@
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
      showguides="true"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="872.92332"
-     inkscape:cy="233.69879"
+     inkscape:zoom="1"
+     inkscape:cx="728.5"
+     inkscape:cy="453.5"
      inkscape:window-width="1920"
      inkscape:window-height="1057"
      inkscape:window-x="-8"
-     inkscape:window-y="825"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1">
     <sodipodi:guide
-       position="185.34061,63.963017"
+       position="192.21978,67.821666"
        orientation="0,-1"
        id="guide1"
        inkscape:locked="false" />
@@ -79,7 +79,7 @@
        id="guide9"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="275.16064,94.850913"
+       position="283.07108,94.726999"
        orientation="0,-1"
        id="guide10"
        inkscape:locked="false" />
@@ -137,6 +137,21 @@
        position="295.39038,85.835291"
        orientation="0,-1"
        id="guide21"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="254.11317,110.80022"
+       orientation="1,0"
+       id="guide22"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="217.02398,129.22845"
+       orientation="1,0"
+       id="guide23"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="133.77266,122.86744"
+       orientation="1,0"
+       id="guide24"
        inkscape:locked="false" />
   </sodipodi:namedview>
   <defs
@@ -246,7 +261,7 @@
        ry="0" />
     <g
        id="display_produzidos"
-       transform="matrix(0.76346713,0,0,0.69925452,114.76502,38.991471)"
+       transform="matrix(0.76123436,0,0,0.65021642,114.9694,41.267277)"
        style="fill:#f2f2f2;fill-opacity:1">
       <rect
          style="fill:#f2f2f2;fill-opacity:1;stroke-width:1.16522;stroke-linejoin:round"
@@ -257,27 +272,22 @@
          y="46.408939"
          rx="2.5245523" />
     </g>
-    <g
-       id="env_min"
-       transform="matrix(0.76346713,0,0,0.71429703,114.76502,38.020673)"
-       style="fill:#f2f2f2;fill-opacity:1">
-      <rect
-         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.681086;stroke-linejoin:round"
-         id="env_minuto_background"
-         width="45.464642"
-         height="39.57534"
-         x="184.47751"
-         y="84.324638"
-         rx="2.3921909" />
-    </g>
     <rect
-       style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.507817;stroke-linejoin:round"
+       style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.411791;stroke-linejoin:round"
        id="bar_progressao"
-       width="18.208313"
-       height="54.933887"
+       width="27.044863"
+       height="24.320282"
        x="187.33379"
        y="71.452713"
-       rx="2.1625924" />
+       rx="2.2025743" />
+    <rect
+       style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.411791;stroke-linejoin:round"
+       id="bar_progressao-9"
+       width="27.044863"
+       height="24.320282"
+       x="187.33379"
+       y="98.358047"
+       rx="2.2025743" />
     <g
        id="display_numerico"
        transform="matrix(0.73055826,0,0,0.68141272,118.4629,39.610391)">
@@ -288,7 +298,7 @@
          height="20.390436"
          x="94.277534"
          y="22.640427"
-         rx="2.9079523" />
+         rx="3.1960602" />
     </g>
     <g
        id="notificacao"
@@ -314,201 +324,126 @@
          fill="#28a745"
          style="fill:#f2f2f2;fill-opacity:1" />
     </g>
-    <rect
-       style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.312821;stroke-linejoin:round"
-       id="op_input_background"
-       width="34.633396"
-       height="10.959447"
-       x="255.58195"
-       y="71.421455"
-       rx="2.1635153" />
     <g
-       id="btn_entrar"
-       class="btn"
-       transform="matrix(0.76346713,0,0,0.70567817,114.76502,39.127298)">
+       id="notificacao-6"
+       transform="matrix(0.45280257,0,0,0.53595135,195.13208,59.235593)"
+       style="fill:#f2f2f2;fill-opacity:1">
       <rect
-         style="fill:#808080;fill-opacity:1;stroke-width:0.327085;stroke-linejoin:round"
-         id="btn_entrar_background"
-         width="26.865944"
-         height="15.445862"
-         x="232.12743"
-         y="45.787342"
-         rx="1.6782898" />
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.692407;stroke-linejoin:round"
+         id="display_notificacao-1"
+         width="125.35505"
+         height="20.390436"
+         x="133.55038"
+         y="22.766823"
+         rx="3.2489593" />
       <text
-         x="245.56"
-         y="53.509998"
+         id="texto_notificacao-4"
+         x="196.22701"
+         y="32.962002"
          font-family="Arial, sans-serif"
-         font-size="5px"
+         font-size="9px"
          font-weight="bold"
-         fill="#ffffff"
          text-anchor="middle"
          dominant-baseline="middle"
-         pointer-events="none"
-         id="text2">ENTRAR</text>
-    </g>
-    <rect
-       style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.273821;stroke-linejoin:round"
-       id="op_producao"
-       width="26.926355"
-       height="10.800588"
-       x="207.58328"
-       y="93.078819"
-       rx="1.6820639" />
-    <rect
-       style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.310723;stroke-linejoin:round"
-       id="quebra_input"
-       width="34.699543"
-       height="10.792319"
-       x="255.60353"
-       y="84.846916"
-       rx="2.2065647" />
-    <g
-       id="btn_limpar"
-       class="btn"
-       transform="matrix(0.76346713,0,0,0.69925452,114.76502,38.991471)">
-      <rect
-         style="fill:#808080;fill-opacity:1;stroke-width:0.326556;stroke-linejoin:round"
-         id="btn_limpar_background"
-         width="26.7791"
-         height="15.445862"
-         x="232.34492"
-         y="65.597267"
-         rx="1.702899" />
-      <text
-         x="245.73"
-         y="73.32"
-         font-family="Arial, sans-serif"
-         font-size="5px"
-         font-weight="bold"
-         fill="#ffffff"
-         text-anchor="middle"
-         dominant-baseline="middle"
-         pointer-events="none"
-         id="text3">ENVIAR</text>
+         fill="#28a745"
+         style="fill:#f2f2f2;fill-opacity:1" />
     </g>
     <g
-       id="btn_limpar-2"
-       class="btn"
-       transform="matrix(0.76346713,0,0,0.69925452,114.66527,52.488859)">
+       id="notificacao-6-1"
+       transform="matrix(0.45280257,0,0,0.53595135,195.13208,72.642804)"
+       style="fill:#f2f2f2;fill-opacity:1">
       <rect
-         style="fill:#808080;fill-opacity:1;stroke-width:0.326556;stroke-linejoin:round"
-         id="btn_limpar_background-6"
-         width="26.7791"
-         height="15.445862"
-         x="232.34492"
-         y="65.597267"
-         rx="1.702899" />
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.692407;stroke-linejoin:round"
+         id="display_notificacao-1-6"
+         width="125.35505"
+         height="20.390436"
+         x="133.55038"
+         y="22.766823"
+         rx="3.2489593" />
       <text
-         x="245.73"
-         y="73.32"
+         id="texto_notificacao-4-8"
+         x="196.22701"
+         y="32.962002"
          font-family="Arial, sans-serif"
-         font-size="5px"
+         font-size="9px"
          font-weight="bold"
-         fill="#ffffff"
          text-anchor="middle"
          dominant-baseline="middle"
-         pointer-events="none"
-         id="text3-6">LIMPAR</text>
+         fill="#28a745"
+         style="fill:#f2f2f2;fill-opacity:1" />
+    </g>
+    <g
+       id="notificacao-6-1-8"
+       transform="matrix(0.45280257,0,0,0.53595135,195.13208,86.156136)"
+       style="fill:#f2f2f2;fill-opacity:1">
+      <rect
+         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.692407;stroke-linejoin:round"
+         id="display_notificacao-1-6-9"
+         width="125.35505"
+         height="20.390436"
+         x="133.55038"
+         y="22.766823"
+         rx="3.2489593" />
+      <text
+         id="texto_notificacao-4-8-2"
+         x="196.22701"
+         y="32.962002"
+         font-family="Arial, sans-serif"
+         font-size="9px"
+         font-weight="bold"
+         text-anchor="middle"
+         dominant-baseline="middle"
+         fill="#28a745"
+         style="fill:#f2f2f2;fill-opacity:1" />
     </g>
     <text
        xml:space="preserve"
        style="font-size:5.15518px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#cccccc;fill-opacity:1;stroke-width:0.365326;stroke-linejoin:round"
-       x="234.71989"
-       y="82.157486"
-       id="text4"
-       transform="scale(1.0449068,0.95702316)"><tspan
-         sodipodi:role="line"
-         id="tspan2"
-         style="font-size:5.15518px;fill:#000000;fill-opacity:1;stroke-width:0.365327"
-         x="234.71989"
-         y="82.157486">O.P</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:5.15518px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#cccccc;fill-opacity:1;stroke-width:0.365326;stroke-linejoin:round"
-       x="226.66882"
-       y="95.742706"
-       id="text2-1"
-       transform="scale(1.0449068,0.95702316)"><tspan
-         sodipodi:role="line"
-         id="tspan2-0"
-         style="font-size:5.15518px;fill:#000000;fill-opacity:1;stroke-width:0.365327"
-         x="226.66882"
-         y="95.742706">Quebra</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:5.15518px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#cccccc;fill-opacity:1;stroke-width:0.365326;stroke-linejoin:round"
-       x="247.16698"
-       y="109.0779"
-       id="text2-1-7"
-       transform="scale(1.0449068,0.95702316)"><tspan
-         sodipodi:role="line"
-         id="tspan2-0-1"
-         style="font-size:5.15518px;fill:#808080;fill-opacity:1;stroke-width:0.365327"
-         x="247.16698"
-         y="109.0779">Env/min</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:5.15518px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#cccccc;fill-opacity:1;stroke-width:0.365326;stroke-linejoin:round"
-       x="130.39413"
+       x="145.58685"
        y="81.89225"
        id="text2-1-8"
        transform="scale(1.0449068,0.95702316)"><tspan
          sodipodi:role="line"
          style="font-size:5.15518px;fill:#808080;fill-opacity:1;stroke-width:0.365327"
-         x="130.39413"
+         x="145.58685"
          y="81.89225"
-         id="tspan21">Num/Envelopes</tspan></text>
-    <rect
-       style="fill:#cccccc;fill-opacity:1;stroke-width:0.285588;stroke-linejoin:round"
-       id="rect3"
-       width="4.7073722"
-       height="1.0019573"
-       x="202.86804"
-       y="73.215523"
-       rx="0"
-       ry="0" />
-    <rect
-       style="fill:#cccccc;fill-opacity:1;stroke-width:0.285588;stroke-linejoin:round"
-       id="rect3-6"
-       width="4.7073722"
-       height="1.0019573"
-       x="203.15672"
-       y="123.50869"
-       rx="0"
-       ry="0" />
-    <rect
-       style="fill:#cccccc;fill-opacity:1;stroke-width:0.240994;stroke-linejoin:round"
-       id="rect3-6-8"
-       width="3.3520615"
-       height="1.0019573"
-       x="204.15921"
-       y="97.943054"
-       rx="0"
-       ry="0" />
+         id="tspan21">OEE</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.73275px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#f2f2f2;fill-opacity:1;stroke-width:0.365326;stroke-linejoin:round"
-       x="197.17075"
-       y="132.11957"
-       id="text5"
+       style="font-size:5.15518px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#cccccc;fill-opacity:1;stroke-width:0.365326;stroke-linejoin:round"
+       x="221.58704"
+       y="81.094299"
+       id="text2-1-8-3"
        transform="scale(1.0449068,0.95702316)"><tspan
          sodipodi:role="line"
-         id="tspan3"
-         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.365327"
-         x="197.17075"
-         y="132.11957">0</tspan></text>
+         style="font-size:5.15518px;fill:#808080;fill-opacity:1;stroke-width:0.365327"
+         x="221.58704"
+         y="81.094299"
+         id="tspan21-1">Tempo/lig</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.73275px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#f2f2f2;fill-opacity:1;stroke-width:0.365326;stroke-linejoin:round"
-       x="197.27887"
-       y="80.297508"
-       id="text3-1"
+       style="font-size:5.15518px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#cccccc;fill-opacity:1;stroke-width:0.365326;stroke-linejoin:round"
+       x="216.34146"
+       y="95.639137"
+       id="text2-1-8-3-1"
        transform="scale(1.0449068,0.95702316)"><tspan
          sodipodi:role="line"
-         id="tspan3-2"
-         style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.365327"
-         x="197.27887"
-         y="80.297508">#</tspan></text>
+         style="font-size:5.15518px;fill:#808080;fill-opacity:1;stroke-width:0.365327"
+         x="216.34146"
+         y="95.639137"
+         id="tspan21-1-1">Tempo/prod</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.15518px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#cccccc;fill-opacity:1;stroke-width:0.365326;stroke-linejoin:round"
+       x="216.34146"
+       y="109.44624"
+       id="text2-1-8-3-1-2"
+       transform="scale(1.0449068,0.95702316)"><tspan
+         sodipodi:role="line"
+         style="font-size:5.15518px;fill:#808080;fill-opacity:1;stroke-width:0.365327"
+         x="216.34146"
+         y="109.44624"
+         id="tspan21-1-1-7">Tempo/man</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:9.40932px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#f2f2f2;fill-opacity:1;stroke-width:0.333401;stroke-linejoin:round"
@@ -567,6 +502,6 @@
          id="tspan5"
          style="font-size:14.1111px;fill:#ffffff;fill-opacity:1;stroke-width:0.5"
          x="124.36719"
-         y="28.710791">PAINEL OPERACIONAL</tspan></text>
+         y="28.710791">PAINEL MANUTENÇÃO</tspan></text>
   </g>
 </svg>

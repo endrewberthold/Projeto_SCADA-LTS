@@ -1,9 +1,9 @@
 /* @license MIT */
-
-var label = "ATENÇÃO";
+//alterar label
+var label = "OK";
 var height = 40;
 var width = 90;
-var value_on_click = true;
+var value_on_click = false;
 var enable_confirm_prompt = false;
 var confirm_message = "Change value?";
 
@@ -37,9 +37,9 @@ if (enable_confirm_prompt)
     command = confirm + "{" + command + "}";
 
 var s = "";
-
+//alterar classe .flatBtn para os demais buttons
 s += "<style>";
-s += ".flatBtnCustom {";
+s += ".flatBtn {";
 s += "  background-color: rgba(0, 0, 0, 0.4);";
 s += "  color: black;";
 s += "  border: none;";
@@ -48,18 +48,18 @@ s += "  font-weight: bold;";
 s += "  border-radius: 4px;";
 s += "  cursor: pointer;";
 s += "}";
-s += ".flatBtnCustom:hover {";
-s += "  background-color: yellow;";
+s += ".flatBtn:hover {";
+s += "  background-color: green;";
+s += "  color: white;";
 s += "}";
 s += "</style>";
-
+//alterar classe .flatBtn para os demais buttons
 s += "<input type='button' ";
 s +=     "onclick='" + command + "' ";
-s +=     "class='flatBtnCustom' ";
+s +=     "class='flatBtn' ";
 s +=     "style='height:" + height + "px; width:" + width + "px;' ";
 s +=     "value='" + label + "' ";
 s += ">";
-
 
 return s;
 
