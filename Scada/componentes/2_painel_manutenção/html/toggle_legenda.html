@@ -1,0 +1,49 @@
+<div style="
+    font-family: Arial, sans-serif;
+    width: fit-content;
+">
+    <button onclick="var l = this.nextElementSibling; l.style.display = l.style.display === 'none' ? 'block' : 'none'; this.innerText = l.style.display === 'none' ? 'Mostrar Legenda' : 'Ocultar Legenda';" style="
+        padding: 4px 12px;
+        background-color: #0044FF;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        margin-bottom: 6px;
+    ">
+        Ocultar Legenda
+    </button>
+
+    <div style="
+        background-color: white;
+        padding: 10px 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+        font-size: 12px;
+    ">
+        <h3 style="margin-top: 0; font-size: 14px; font-weight: bold;">Legenda dos Estados</h3>
+
+        <div style="display: flex; align-items: center; margin-bottom: 6px;">
+            <div style="width: 15px; height: 15px; background-color: #12CE00; margin-right: 8px; border-radius: 2px;"></div>
+            <span><strong> 2 </strong> > Operando</span>
+        </div>
+
+        <div style="display: flex; align-items: center; margin-bottom: 6px;">
+            <div style="width: 15px; height: 15px; background-color: #FFD700; margin-right: 8px; border-radius: 2px;"></div>
+            <span><strong> 3 </strong> > Atenção</span>
+        </div>
+
+        <div style="display: flex; align-items: center; margin-bottom: 6px;">
+            <div style="width: 15px; height: 15px; background-color: #0044FF; margin-right: 8px; border-radius: 2px;"></div>
+            <span><strong> 4 </strong> > Manutenção</span>
+        </div>
+        
+        <div style="display: flex; align-items: center; align-items: center;">
+            <div style="width: 15px; height: 15px; background-color: #FF0000; margin-right: 8px; border-radius: 2px;"></div>
+            <span><strong> 5 </strong> > Emergência</span>
+        </div>
+
+    </div>
+</div>

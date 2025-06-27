@@ -1,8 +1,8 @@
 /* @license MIT */
 //alterar label
-var label = "OK";
-var height = 40;
-var width = 90;
+var label = "CONCLUÍDO";
+var height = 35;
+var width = 347;
 var value_on_click = false;
 var enable_confirm_prompt = false;
 var confirm_message = "Change value?";
@@ -39,24 +39,26 @@ if (enable_confirm_prompt)
 var s = "";
 //alterar classe .flatBtn para os demais buttons
 s += "<style>";
-s += ".flatBtn {";
-s += "  background-color: rgba(0, 0, 0, 0.4);";
+s += ".flatBtnConc {";
+s += "  background-color: #797979FF;";
 s += "  color: black;";
 s += "  border: none;";
+s += "  box-shadow: 2px 2px 0 0;";
 s += "  transition: background-color 0.3s ease;";
 s += "  font-weight: bold;";
 s += "  border-radius: 4px;";
 s += "  cursor: pointer;";
 s += "}";
-s += ".flatBtn:hover {";
+s += ".flatBtnConc:hover {";
 s += "  background-color: green;";
 s += "  color: white;";
+s += "  box-shadow: 2px 2px 0 0;";
 s += "}";
 s += "</style>";
 //alterar classe .flatBtn para os demais buttons
 s += "<input type='button' ";
 s +=     "onclick='" + command + "' ";
-s +=     "class='flatBtn' ";
+s +=     "class='flatBtnConc' ";
 s +=     "style='height:" + height + "px; width:" + width + "px;' ";
 s +=     "value='" + label + "' ";
 s += ">";
