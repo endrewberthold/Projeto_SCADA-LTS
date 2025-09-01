@@ -1,7 +1,11 @@
 /* @license MIT */
 
 var true_format = {
-    color: "#FFFF00" // vermelho com contorno branco
+    color: "#00ff08" // verde claro energizado
+};
+
+var false_format = {
+    color: "#797979" // verde escuro não energizado
 };
 
 //
@@ -12,40 +16,40 @@ var true_format = {
 if (getDataPointType(point.id) != "BINARY")
     return "The selected data point is not binary. Please select a binary data point.";
 
-// Se for falso, não exibe nada
-if (!value) return "";
+// Define a cor com base no valor
+var color = value ? true_format.color : false_format.color;
 
 // CSS para animação de piscar
-var animationStyle = "animation: blink 1s infinite;";
+// var animationStyle = value ? "animation: blink 1s infinite;" : "";
 
 // Retorno do HTML com CSS inline e animação
 var s = "";
 
-s += "<style>";
-s += "@keyframes blink {";
-s += "  0% {opacity: 1;}";
-s += "  50% {opacity: 0;}";
-s += "  100% {opacity: 1;}";
-s += "}";
-s += "</style>";
+// s += "<style>";
+// s += "@keyframes blink {";
+// s += "  0% {opacity: 1;}";
+// s += "  50% {opacity: 0;}";
+// s += "  100% {opacity: 1;}";
+// s += "}";
+// s += "</style>";
 
 s += "<div style='";
-s += "width: 50px;";
-s += "height: 60px;";
+s += "width: 30px;";
+s += "height: 40px;";
 s += "display: flex;";
 s += "justify-content: center;";
 s += "align-items: center;";
-s += animationStyle;
+// s += animationStyle;
 s += "'>";
 
-s += "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='44px' height='44px'>";
-s += "<path d='M1 21h22L12 2 1 21z' fill='" + true_format.color + "' stroke='white' stroke-width='1'/>";
-s += "<path d='M13 16h-2v2h2v-2zm0-8h-2v6h2V8z' fill='white'/>";
+s += "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='" + color + "' width='28px' height='28px'>";
+s += "<path d='M13 2L3 14h7v8l10-12h-7z'/>";
 s += "</svg>";
 
 s += "</div>";
 
 return s;
+
 
 // Função para checar tipo do datapoint
 function getDataPointType(identifier) {

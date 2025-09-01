@@ -1,8 +1,8 @@
 /* @license MIT  */
 
 // Appearance settings
-var height = 41;
-var width = 130;
+var height = 47;
+var width = 143;
 
 var background_color = "#f2f2f2ff";
 var text_color = "#000000";
@@ -27,8 +27,17 @@ var border = 1;
 height = height - 2 * (border + padding);
 width = width - 2 * (border + padding);
 
-var command = "mango.view.setPoint(" + point.id + ", " + pointComponent.id + ", value)" ;
-var restriction = "if (this.checkValidity()) " + command;
+// Função de validação em string concatenada
+var command = ""
+    + "var val = this.value;"
+    + "if(val.length !== 6){"
+    + "  if(!window.confirm('O número da requisição precisa conter 6 dígitos.')){"
+    + "    this.focus();"
+    + "    return;"
+    + "  }"
+    + "}"
+    + "mango.view.setPoint(" + point.id + ", " + pointComponent.id + ", val);";
+
 
 // Return variable
 var s = "";
@@ -40,18 +49,13 @@ s +=     "height:" + height + "px; ";
 s +=     "width:" + width + "px; ";
 s +=     "background-color:" + background_color + "; ";
 s +=     "color:" + text_color + "; ";
-s +=     "border-radius: 4px; ";
+s +=     "border-radius: 8px; ";
 s +=     "font-size:" + font + "px; ";
 s +=     "padding:" + padding + "px; ";
 s +=     "border:" + border + "px solid;'";
 
-if (restrict_values) {
-    s += " onchange='" + restriction + "' ";
-    s += " onkeyup='this.reportValidity();' ";
-    s += " step='" + step + "' min='" + minimum + "' max='" + maximum + "' ";
-} else {
-    s += " onchange='" + command + "' ";
-}
+// sempre valida antes de enviar
+s += " onchange=\"" + command + "\" ";
 
 s += ">";
 

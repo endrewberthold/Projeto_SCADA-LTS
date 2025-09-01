@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="req-box"
+     style="padding:8px;border:1px solid #ccc;border-radius:8px;font:14px sans-serif">
+    Carregando...
+</div>
+
+<script>
+    fetch('http://172.20.251.181:8081/api/requisicao/817570')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Erro de rede: ' + response.statusText);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Dados recebidos:', data);
+
+
+            const item = data[0];
+
+            console.log('Número da requisição:', item.id.nroReq);
+            console.log('Código do produto:', item.id.codProduto);
+            console.log('Quantidade:', item.qtde);
+        })
+        .catch(error => {
+            console.error('Falha ao buscar os dados:', error);
+        });
+</script>
+
+</body>
+</html>
